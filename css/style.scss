@@ -49,11 +49,19 @@ $light-gray: rgba(0, 0, 0, 0.5);
 
 body {
     font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-    overflow: hidden;
 }
 
 h1 {
     font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
+
+// GENERAL CLASSES
+
+.cta-btn {
+    color: black;
+    border: 1.5px solid $purple;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
 }
 
 // ***** START OF LANDING *****
@@ -64,32 +72,38 @@ h1 {
 }
 
 .fancy-toggler.navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    z-index: 1;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .fancy-toggler.navbar-toggler {
-    border-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
 }
 
 // .navbar-nav {
 //     height: 100vh;
 //     width: 100%;
 //     background-color: $dark-purple;
-//     position: fixed;
+//     position: absolute;
 //     top: 0;
 //     left: 0;
 // }
 
-#landing__photo {
-    width: 100%;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bolder;
 }
 
-.cta-btn {
-    color: black;
-    border: 1px solid $purple;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
+.landing__photo {
+    width: 100%;
+    height: 100%;
+}
+
+.landing__bio {
+    margin-top: 5%;
+}
+
+.landing__learn-more-btn {
+    font-size: 0.9rem;
 }
 
 // ***** END OF LANDING *****
@@ -113,7 +127,21 @@ h1 {
     margin: auto;
 }
 
-
-
-
 // ***** END OF BIO *****
+
+// ***** START OF MEDIA QUERIES *****
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: $dark-purple;
+        font-weight: bolder;
+    }
+}
+
+// ***** END OF MEDIA QUERIES *****
