@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adelle_rgregular';
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 2.5rem;
+}
+
+.fancy-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  z-index: 1;
+}
+
+.fancy-toggler.navbar-toggler {
+  border-color: white;
+}
+
+#landing__photo {
+  width: 100%;
+}
+
+.cta-btn {
+  color: black;
+  border: 1px solid #c1b0bf;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.carousel-inner {
+  background-color: #9c8b97;
+  padding: 3em 0;
+}
+
+.testimonial__text {
+  color: white;
+  font-style: italic;
+}
+
+.testimonial__img {
+  width: 30%;
+  border-radius: 50%;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
