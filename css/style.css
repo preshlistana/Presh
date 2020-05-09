@@ -29,6 +29,7 @@
 
 body {
   font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 
 .cta-btn {
   color: black;
-  border: 1.5px solid #c1b0bf;
+  border: 1.5px solid #9c8b97;
   border-radius: 0.5em;
   padding: 0.5em 1em;
 }
@@ -71,6 +72,26 @@ h1 {
 
 .landing__learn-more-btn {
   font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.landing__learn-more-btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #9c8b97;
+}
+
+.bio__img {
+  width: 100%;
+}
+
+.bio__title,
+.bio__first-letter {
+  font-size: 1.8rem;
+}
+
+.bio__subtitle {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-inner {
@@ -79,24 +100,120 @@ h1 {
 }
 
 .testimonial__text {
+  font-size: 1.15rem;
+}
+
+.testimonial__text,
+.testimonial__title {
   color: white;
+}
+
+.testimonial__text {
   font-style: italic;
 }
 
 .testimonial__img {
-  width: 30%;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin: auto;
+  margin: 0 auto 1em;
+}
+
+.contact__title {
+  font-size: 1.8rem;
+}
+
+.contact__subtitle {
+  font-size: 1.2rem;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+  border: 1.35px solid #9c8b97;
+  border-radius: 0.15em;
+  padding: 0.4em;
+  resize: vertical;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 0.75em;
+}
+
+.contact__submit-btn {
+  background-color: #9c8b97;
+  color: white;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.footer__about-text {
+  font-size: 1rem;
+}
+
+.footer__ul {
+  list-style: none;
+}
+
+.footer__about-text,
+.footer__link {
+  color: #868b92;
+}
+
+.footer__link {
+  line-height: 2em;
+}
+
+.footer__social-img {
+  font-size: 1.15rem;
+  border: 2px solid #c1b0bf;
+  border-radius: 50%;
+  padding: 0.25em .45em;
+  margin: 0 0.25em;
+  color: black;
+}
+
+.footer__social-img:hover {
+  background-color: #c1b0bf;
+  color: black;
 }
 
 @media (min-width: 768px) {
+  .landing__navbar-ul {
+    width: 50%;
+  }
   .navbar-dark .navbar-nav .nav-link {
     color: black;
     font-weight: normal;
   }
+  .navbar-dark .navbar-nav .nav-link.say-hi-btn {
+    background-color: #9c8b97;
+    border-radius: 0.5em;
+    color: white;
+  }
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #9c8b97;
     font-weight: bolder;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 3.5rem;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1.15rem;
+  }
+  .landing__bio {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+  }
+  .landing__learn-more-btn {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
