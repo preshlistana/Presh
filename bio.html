@@ -12,42 +12,45 @@
     <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
     <!-- Personal CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
     <title>Presh's Bio</title>
 </head>
 
 <body>
-    <!-- NAV -->
-    <!-- <nav class="navbar navbar-expand-md fixed-top navbar-dark">
-        <button class="fancy-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#landing__navbar"
-            aria-controls="landing__navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded">
+        <button class="fancy-nonlanding-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">presh</a>
-        <a class="nav-link say-hi-btn" href="#">Say Hi! 🙌</a>
-
-        <div class="collapse navbar-collapse" id="landing__navbar">
-            <ul class="landing__navbar-ul navbar-nav mr-auto d-flex justify-content-around ">
+        <span class="nonlanding-logo mx-auto">presh</span>
+        <a class="say-hi-btn cta-btn" href="contact.html">Say Hi! 🙌</a>
+        <div class="navbar-collapse collapse w-100" id="mainNavbar">
+            <ul class="nav navbar-nav ml-auto w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="bio.html">Bio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Teaching</a>
+                    <a class="nav-link" href="teaching.html">Teaching</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link say-hi-btn" href="#">Say Hi! 🙌</a>
+                    <a class="nav-link" href="contact.html">Say Hi!</a>
                 </li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
 
     <!-- CONTENT -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <h1 class="bio__title">Title of my bio lorem ipsum dolor</h1>
         <p class="bio__subtitle">Subtitle for my bio goes here</p>
-    </div>
+    </div> -->
 
     <!-- BIO CAROUSEL -->
     <div id="bio__carousel" class="carousel slide" data-ride="false" data-interval="false">
@@ -126,7 +129,7 @@
                 </p>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <a href="#" class="bio__view-projects-btn cta-btn mb-3">View Projects</a>
+                <a href="projects.html" class="bio__view-projects-btn cta-btn mb-3">View Projects</a>
             </div>
         </div>
     </div>
@@ -216,7 +219,7 @@
                 <div class="col-lg-4">
                     <h3 class="footer__title">ABOUT</h3>
                     <p class="footer__about-text">Pellentesque viverra nibh ut lacus accumsan venenatis.
-                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about my <a href="#"
+                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about my <a href="teaching.html"
                             class="footer__link">teaching</a>.
                     </p>
                 </div>

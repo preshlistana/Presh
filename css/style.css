@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'proxima_nova_rgregular';
+  font-family: "proxima_nova_rgregular";
   src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
   src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'proxima_nova_rgbold';
+  font-family: "proxima_nova_rgbold";
   src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
   src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'adelle_rgregular';
+  font-family: "adelle_rgregular";
   src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
   src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
   font-weight: normal;
@@ -28,12 +28,12 @@
 }
 
 body {
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
 h1 {
-  font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
 }
 
 .cta-btn {
@@ -43,8 +43,66 @@ h1 {
   padding: 0.5em 1em;
 }
 
-.navbar-brand {
-  font-family: 'Covered By Your Grace', cursive;
+.cover-photo-cta {
+  color: white;
+  font-weight: bolder;
+  font-size: 0.75rem;
+  background-color: #001229;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: 30%;
+}
+
+.project-hmw {
+  font-size: 1.6rem;
+}
+
+.project-subtitle {
+  font-size: 1.7rem;
+  font-family: "Covered By Your Grace", cursive;
+  display: inline;
+  border-bottom: 5px solid #e49e8e;
+}
+
+.project-inline-link {
+  color: #e49e8e;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.figure-caption {
+  font-size: 0.75rem;
+}
+
+.border-dark {
+  border: 1.5px solid #9c8b97 !important;
+}
+
+.card-header,
+.card-img-top {
+  border-bottom: 1px solid #b3a7b0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 1.35rem;
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+}
+
+.view-project-btn {
+  border: none;
+  background-color: #9c8b97;
+  font-weight: bolder;
+  color: white;
+}
+
+.navbar-brand,
+.nonlanding-logo {
+  font-family: "Covered By Your Grace", cursive;
   font-size: 2.5rem;
 }
 
@@ -54,6 +112,25 @@ h1 {
 
 .fancy-toggler.navbar-toggler {
   border-color: rgba(255, 255, 255, 0);
+}
+
+.fancy-nonlanding-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.fancy-nonlanding-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.nonlanding-logo {
+  color: #e49e8e;
+}
+
+.say-hi-btn {
+  background-color: #9c8b97;
+  color: white;
+  font-weight: bolder;
+  padding: 0.25em 0.5em;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -119,6 +196,33 @@ h1 {
   margin: 0 auto 1em;
 }
 
+.sd__cover-photo-container {
+  background-color: #27384f;
+}
+
+.sd-logo {
+  width: 15%;
+}
+
+.fa-instagram {
+  color: #cc2653;
+  font-size: 1em;
+}
+
+.fa-crop-alt,
+.fa-laptop-code {
+  font-size: 2rem;
+  color: #a259ff;
+}
+
+.fa-crop-alt {
+  color: #bf8cff;
+}
+
+.fa-laptop-code {
+  color: #f2956e;
+}
+
 .contact__title {
   font-size: 1.8rem;
 }
@@ -127,7 +231,7 @@ h1 {
   font-size: 1.2rem;
 }
 
-input[type=text],
+input[type="text"],
 textarea {
   width: 100%;
   border: 1.35px solid #9c8b97;
@@ -172,7 +276,7 @@ textarea {
   font-size: 1.15rem;
   border: 2px solid #c1b0bf;
   border-radius: 50%;
-  padding: 0.25em .45em;
+  padding: 0.25em 0.45em;
   margin: 0 0.25em;
   color: black;
 }

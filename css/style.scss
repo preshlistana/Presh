@@ -6,80 +6,181 @@ $orange: rgb(228, 158, 142);
 $light-white: rgb(255, 247, 253);
 $light-gray: rgba(0, 0, 0, 0.7);
 $dark-gray: #868b92;
-
+$dark-green: #27384f;
+$dark-blue: #001229;
+$intagram-red: #cc2653;
+$figma-purple: #a259ff;
+$html-orange: #eb6228;
 
 // Proxima-Nova font
 
 @font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
-    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
-        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
-        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'adelle_rgregular';
-    src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
-    src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
-        url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
-        url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
-        url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "adelle_rgregular";
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-    text-decoration: none;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 h1 {
-    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
 }
 
 // GENERAL CLASSES
 
 .cta-btn {
-    color: black;
-    border: 1.5px solid $dark-purple;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
+  color: black;
+  border: 1.5px solid $dark-purple;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
 }
 
-// ***** START OF LANDING *****
+// Projects classes
 
-.navbar-brand {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 2.5rem;
+.cover-photo-cta {
+  color: white;
+  font-weight: bolder;
+  font-size: 0.75rem;
+  background-color: $dark-blue;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: 30%;
+}
+
+.project-hmw {
+  font-size: 1.6rem;
+}
+
+.project-subtitle {
+  font-size: 1.7rem;
+  font-family: "Covered By Your Grace", cursive;
+  display: inline;
+  border-bottom: 5px solid $orange;
+}
+
+.project-inline-link {
+  color: $orange;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.figure-caption {
+  font-size: 0.75rem;
+}
+
+.border-dark {
+  border: 1.5px solid $dark-purple !important;
+}
+
+.card-header,
+.card-img-top {
+  border-bottom: 1px solid lighten($dark-purple, 10%);
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 1.35rem;
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+}
+
+.view-project-btn {
+  border: none;
+  background-color: $dark-purple;
+  font-weight: bolder;
+  color: white;
+}
+
+// ***** START OF HEADER *****
+
+// Landing
+.navbar-brand,
+.nonlanding-logo {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 2.5rem;
 }
 
 .fancy-toggler.navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .fancy-toggler.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
 }
+
+// Nonlanding
+
+.fancy-nonlanding-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.fancy-nonlanding-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.nonlanding-logo {
+  color: $orange;
+}
+
+.say-hi-btn {
+  background-color: $dark-purple;
+  color: white;
+  font-weight: bolder;
+  padding: 0.25em 0.5em;
+}
+
+// ***** END OF HEADER *****
+
+// ***** START OF LANDING *****
 
 // .navbar-nav {
 //     height: 100vh;
@@ -91,100 +192,128 @@ h1 {
 // }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: bolder;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bolder;
 }
 
 .landing__photo {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .landing__bio {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 .landing__learn-more-btn {
-    font-size: 0.9rem;
-    font-weight: bolder;
+  font-size: 0.9rem;
+  font-weight: bolder;
 }
 
 .landing__learn-more-btn:hover {
-    text-decoration: none;
-    color: white;
-    background-color: $dark-purple;
+  text-decoration: none;
+  color: white;
+  background-color: $dark-purple;
 }
 
 // ***** END OF LANDING *****
-
 
 // ***** START OF BIO *****
 
 // Bio Carousel
 
 .bio__img {
-    width: 100%;
-    // height: 100%;
+  width: 100%;
+  // height: 100%;
 }
 
-// Article 
+// Article
 .bio__title,
 .bio__first-letter {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .bio__subtitle {
-    color: $light-gray;
+  color: $light-gray;
 }
 
 .carousel-inner {
-    background-color: $dark-purple;
-    padding: 3em 0;
+  background-color: $dark-purple;
+  padding: 3em 0;
 }
 
 .testimonial__text {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }
 
 .testimonial__text,
 .testimonial__title {
-    color: white;
+  color: white;
 }
 
 .testimonial__text {
-    font-style: italic;
+  font-style: italic;
 }
 
 .testimonial__img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto 1em;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 1em;
 }
 
 // ***** END OF BIO *****
 
+// ***** START OF SHARED DISTANCE PAGE *****
+
+.sd__cover-photo-container {
+  background-color: $dark-green;
+}
+
+.sd-logo {
+  width: 15%;
+}
+
+.fa-instagram {
+  color: #cc2653;
+  font-size: 1em;
+}
+
+.fa-crop-alt,
+.fa-laptop-code {
+  font-size: 2rem;
+  color: $figma-purple;
+}
+
+.fa-crop-alt {
+  color: lighten($figma-purple, 10%);
+}
+
+.fa-laptop-code {
+  color: lighten($html-orange, 15%);
+}
+
+// ***** END OF SHARED DISTANCE PAGE *****
 
 // ***** START OF SAY HI PAGE *****
 
 .contact__title {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .contact__subtitle {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-input[type=text],
+input[type="text"],
 textarea {
-    width: 100%;
-    border: 1.35px solid $dark-purple;
-    border-radius: 0.15em;
-    padding: 0.4em;
-    resize: vertical;
-    box-sizing: border-box;
-    margin-bottom: 0.75em;
-
+  width: 100%;
+  border: 1.35px solid $dark-purple;
+  border-radius: 0.15em;
+  padding: 0.4em;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 0.75em;
 }
 
 // input[type=text]:hover,
@@ -193,54 +322,51 @@ textarea {
 // }
 
 .contact__submit-btn {
-    background-color: $dark-purple;
-    color: white;
-    font-weight: bolder;
-    margin: 0 auto;
+  background-color: $dark-purple;
+  color: white;
+  font-weight: bolder;
+  margin: 0 auto;
 }
 
 // ***** END OF SAY HI PAGE *****
 
-
-
 // ***** START OF FOOTER *****
 
 .footer__title {
-    font-size: 1.25rem;
-    font-weight: bolder;
+  font-size: 1.25rem;
+  font-weight: bolder;
 }
 
 .footer__about-text {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .footer__ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer__about-text,
 .footer__link {
-    color: $dark-gray;
+  color: $dark-gray;
 }
 
 .footer__link {
-    line-height: 2em;
+  line-height: 2em;
 }
 
 .footer__social-img {
-    font-size: 1.15rem;
-    border: 2px solid $purple;
-    border-radius: 50%;
-    padding: 0.25em .45em;
-    margin: 0 0.25em;
-    color: black;
+  font-size: 1.15rem;
+  border: 2px solid $purple;
+  border-radius: 50%;
+  padding: 0.25em 0.45em;
+  margin: 0 0.25em;
+  color: black;
 }
 
 .footer__social-img:hover {
-    background-color: $purple;
-    color: black;
+  background-color: $purple;
+  color: black;
 }
-
 
 // ***** END OF FOOTER *****
 
@@ -248,45 +374,45 @@ textarea {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .landing__navbar-ul {
-        width: 50%;
-    }
+  .landing__navbar-ul {
+    width: 50%;
+  }
 
-    .navbar-dark .navbar-nav .nav-link {
-        color: rgb(0, 0, 0);
-        font-weight: normal;
-    }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+  }
 
-    .navbar-dark .navbar-nav .nav-link.say-hi-btn {
-        background-color: $dark-purple;
-        border-radius: 0.5em;
-        color: white;
-    }
+  .navbar-dark .navbar-nav .nav-link.say-hi-btn {
+    background-color: $dark-purple;
+    border-radius: 0.5em;
+    color: white;
+  }
 
-    .navbar-dark .navbar-nav .nav-link:hover {
-        color: $dark-purple;
-        font-weight: bolder;
-    }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: $dark-purple;
+    font-weight: bolder;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    .navbar-brand {
-        font-size: 3.5rem;
-    }
+  .navbar-brand {
+    font-size: 3.5rem;
+  }
 
-    .navbar-dark .navbar-nav .nav-link {
-        font-size: 1.15rem;
-    }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1.15rem;
+  }
 
-    .landing__bio {
-        font-size: 1.25rem;
-        margin-bottom: 1em;
-    }
+  .landing__bio {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+  }
 
-    .landing__learn-more-btn {
-        font-size: 1rem;
-    }
+  .landing__learn-more-btn {
+    font-size: 1rem;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -303,7 +429,5 @@ textarea {
 
 // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) { ... }
-
-
 
 // ***** END OF MEDIA QUERIES *****
