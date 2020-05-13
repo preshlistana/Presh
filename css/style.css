@@ -89,15 +89,48 @@ h1 {
   font-size: 1.35rem;
 }
 
+.projects__title {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 1.6rem;
+}
+
 .card-subtitle {
   font-size: 1.1rem;
 }
 
-.view-project-btn {
+.view-project-btn,
+.projects__view-project-btn {
   border: none;
   background-color: #9c8b97;
   font-weight: bolder;
   color: white;
+}
+
+.projects__view-project-btn {
+  font-size: 0.75rem;
+}
+
+.projects-title {
+  font-size: 2.15rem;
+}
+
+.projects-subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.35rem;
+}
+
+.projects__logo,
+.projects__icb-logo {
+  margin: 0 auto;
+  border-bottom: 1.5px solid #9c8b97;
+}
+
+.projects__logo {
+  width: 30%;
+}
+
+.projects__icb-logo {
+  width: 30%;
 }
 
 .navbar-brand,
@@ -221,6 +254,12 @@ h1 {
 
 .fa-laptop-code {
   color: #f2956e;
+}
+
+.shared__distance-ms-logo {
+  width: 40%;
+  margin: 0 auto;
+  border-bottom: 1.5px solid #9c8b97;
 }
 
 .contact__title {
