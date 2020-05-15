@@ -11,20 +11,19 @@ $dark-blue: #001229;
 $intagram-red: #cc2653;
 $figma-purple: #a259ff;
 $html-orange: #eb6228;
+$cog-blue: #0892D0;
+$teaching-orange: #FB7233;
+$project-green: #6C8102;
 
 // Proxima-Nova font
 
 @font-face {
   font-family: "proxima_nova_rgregular";
   src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
-      format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
-      format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
-      format("svg");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,14 +31,10 @@ $html-orange: #eb6228;
 @font-face {
   font-family: "proxima_nova_rgbold";
   src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
-      format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
-      format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
-      format("svg");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -47,14 +42,10 @@ $html-orange: #eb6228;
 @font-face {
   font-family: "adelle_rgregular";
   src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff")
-      format("woff"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf")
-      format("truetype"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular")
-      format("svg");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -83,6 +74,11 @@ h1 {
 }
 
 // Projects classes
+
+.projects__cover-img-container {
+  position: relative;
+  width: 100%;
+}
 
 .cover-photo-cta {
   color: white;
@@ -171,7 +167,15 @@ h1 {
 
 .projects__icb-logo {
   width: 30%;
-  //   padding-bottom: 0.25em;
+}
+
+// Project Icons
+.fa-crop-alt,
+.fa-laptop-code,
+.fa-cogs,
+.fa-chalkboard-teacher,
+.fa-project-diagram {
+  font-size: 2rem;
 }
 
 // ***** START OF HEADER *****
@@ -313,12 +317,6 @@ h1 {
   font-size: 1em;
 }
 
-.fa-crop-alt,
-.fa-laptop-code {
-  font-size: 2rem;
-  color: $figma-purple;
-}
-
 .fa-crop-alt {
   color: lighten($figma-purple, 10%);
 }
@@ -327,13 +325,48 @@ h1 {
   color: lighten($html-orange, 15%);
 }
 
-.shared__distance-ms-logo {
+.projects__ms-logo {
   width: 40%;
   margin: 0 auto;
   border-bottom: 1.5px solid $dark-purple;
 }
 
 // ***** END OF SHARED DISTANCE PAGE *****
+
+
+// ***** START OF ICB PAGE *****
+
+.icb__cta-btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+  background-color: $dark-blue;
+  color: white;
+  padding: 0.25em 0.75em;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.fa-cogs {
+  color: lighten($cog-blue, 30%);
+}
+
+
+.fa-chalkboard-teacher {
+  color: lighten($teaching-orange, 15%);
+}
+
+// ***** END OF ICB PAGE *****
+
+// ***** START OF MAKE SCHOOL PAGE *****
+
+.fa-project-diagram {
+  color: lighten($project-green, 15%);
+}
+
+// ***** END OF MAKE SCHOOL PAGE *****
 
 // ***** START OF SAY HI PAGE *****
 

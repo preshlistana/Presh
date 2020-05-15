@@ -43,6 +43,11 @@ h1 {
   padding: 0.5em 1em;
 }
 
+.projects__cover-img-container {
+  position: relative;
+  width: 100%;
+}
+
 .cover-photo-cta {
   color: white;
   font-weight: bolder;
@@ -131,6 +136,14 @@ h1 {
 
 .projects__icb-logo {
   width: 30%;
+}
+
+.fa-crop-alt,
+.fa-laptop-code,
+.fa-cogs,
+.fa-chalkboard-teacher,
+.fa-project-diagram {
+  font-size: 2rem;
 }
 
 .navbar-brand,
@@ -242,12 +255,6 @@ h1 {
   font-size: 1em;
 }
 
-.fa-crop-alt,
-.fa-laptop-code {
-  font-size: 2rem;
-  color: #a259ff;
-}
-
 .fa-crop-alt {
   color: #bf8cff;
 }
@@ -256,10 +263,36 @@ h1 {
   color: #f2956e;
 }
 
-.shared__distance-ms-logo {
+.projects__ms-logo {
   width: 40%;
   margin: 0 auto;
   border-bottom: 1.5px solid #9c8b97;
+}
+
+.icb__cta-btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+  background-color: #001229;
+  color: white;
+  padding: 0.25em 0.75em;
+  font-weight: bolder;
+  font-size: 0.85rem;
+}
+
+.fa-cogs {
+  color: #77d1fa;
+}
+
+.fa-chalkboard-teacher {
+  color: #fca67e;
+}
+
+.fa-project-diagram {
+  color: #abcc03;
 }
 
 .contact__title {
