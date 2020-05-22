@@ -11,19 +11,23 @@ $dark-blue: #001229;
 $intagram-red: #cc2653;
 $figma-purple: #a259ff;
 $html-orange: #eb6228;
-$cog-blue: #0892D0;
-$teaching-orange: #FB7233;
-$project-green: #6C8102;
+$cog-blue: #0892d0;
+$teaching-orange: #fb7233;
+$project-green: #6c8102;
 
 // Proxima-Nova font
 
 @font-face {
   font-family: "proxima_nova_rgregular";
   src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,10 +35,14 @@ $project-green: #6C8102;
 @font-face {
   font-family: "proxima_nova_rgbold";
   src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff") format("woff"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf") format("truetype"),
-    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,10 +50,14 @@ $project-green: #6C8102;
 @font-face {
   font-family: "adelle_rgregular";
   src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot");
-  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix") format("embedded-opentype"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff") format("woff"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf") format("truetype"),
-    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular") format("svg");
+  src: url("https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -68,7 +80,7 @@ h1 {
 
 .cta-btn {
   color: black;
-  border: 1.5px solid $dark-purple;
+  // border: 1.5px solid $dark-purple;
   border-radius: 0.5em;
   padding: 0.5em 1em;
 }
@@ -85,13 +97,22 @@ h1 {
   font-weight: bolder;
   font-size: 0.75rem;
   background-color: $dark-blue;
+  border: 2px solid $dark-blue;
   padding: 0.5em;
   border-radius: 0.5em;
   width: 30%;
 }
 
+.cover-photo-cta:hover {
+  text-decoration: none;
+  background-color: $dark-green;
+  border: 2px solid $dark-blue;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
 .project-hmw {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .project-subtitle {
@@ -107,8 +128,12 @@ h1 {
   text-decoration: underline;
 }
 
+.project-inline-link:hover {
+  color: $orange;
+}
+
 .figure-caption {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .border-dark {
@@ -146,6 +171,13 @@ h1 {
   font-size: 0.75rem;
 }
 
+.projects__view-project-btn:hover {
+  color: black;
+  text-decoration: none;
+  background-color: lighten($dark-purple, 15%);
+  transition: 0.3s ease-in;
+}
+
 .projects-title {
   font-size: 2.15rem;
 }
@@ -161,12 +193,12 @@ h1 {
   border-bottom: 1.5px solid $dark-purple;
 }
 
-.projects__logo {
-  width: 30%;
+.projects__icb-logo {
+  width: 4.25em;
 }
 
-.projects__icb-logo {
-  width: 30%;
+.projects__logo {
+  width: 5em;
 }
 
 // Project Icons
@@ -214,6 +246,23 @@ h1 {
   color: white;
   font-weight: bolder;
   padding: 0.25em 0.5em;
+}
+
+.say-hi-btn:hover {
+  color: white;
+  background-color: darken($dark-purple, 20%);
+  transition: 0.3s ease-in;
+  text-decoration: none;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: white;
 }
 
 // ***** END OF HEADER *****
@@ -309,12 +358,12 @@ h1 {
 }
 
 .sd-logo {
-  width: 15%;
+  width: 2em;
 }
 
 .fa-instagram {
   color: #cc2653;
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
 .fa-crop-alt {
@@ -325,14 +374,7 @@ h1 {
   color: lighten($html-orange, 15%);
 }
 
-.projects__ms-logo {
-  width: 40%;
-  margin: 0 auto;
-  border-bottom: 1.5px solid $dark-purple;
-}
-
 // ***** END OF SHARED DISTANCE PAGE *****
-
 
 // ***** START OF ICB PAGE *****
 
@@ -341,6 +383,7 @@ h1 {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid $dark-blue;
   border-radius: 0.5em;
   background-color: $dark-blue;
   color: white;
@@ -349,10 +392,17 @@ h1 {
   font-size: 0.85rem;
 }
 
+.icb__cta-btn:hover {
+  text-decoration: none;
+  background-color: lighten($dark-blue, 85%);
+  border: 1px solid $dark-blue;
+  color: black;
+  transition: 0.3s ease-in;
+}
+
 .fa-cogs {
   color: lighten($cog-blue, 30%);
 }
-
 
 .fa-chalkboard-teacher {
   color: lighten($teaching-orange, 15%);
@@ -427,6 +477,21 @@ textarea {
   line-height: 2em;
 }
 
+.footer__link:hover {
+  color: $orange;
+  text-decoration: none;
+}
+
+.footer__teaching-link {
+  text-decoration: underline;
+  color: $orange;
+}
+
+.footer__teaching-link:hover {
+  text-decoration: underline;
+  color: $orange;
+}
+
 .footer__social-img {
   font-size: 1.15rem;
   border: 2px solid $purple;
@@ -446,7 +511,28 @@ textarea {
 // ***** START OF MEDIA QUERIES *****
 
 // Medium devices (tablets, 768px and up)
+
 @media (min-width: 768px) {
+  // Header
+
+  .nav-link {
+    font-size: 1.05rem;
+  }
+
+  .navbar-nav .nav-link.header__say-hi-btn {
+    background-color: $dark-purple;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.35em 0.5em;
+  }
+
+  .navbar-nav .nav-link.header__say-hi-btn:hover {
+    color: white;
+    background-color: darken($dark-purple, 20%);
+    transition: 0.3s ease-in;
+  }
+
+  // Landing
   .landing__navbar-ul {
     width: 50%;
   }
@@ -466,10 +552,42 @@ textarea {
     color: $dark-purple;
     font-weight: bolder;
   }
+
+  // Projects
+  .projects__view-project-btn {
+    font-size: 0.9rem;
+  }
+
+  // General sub projects
+  .project-hmw {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 1.9rem;
+  }
+
+  .project-description {
+    font-size: 1.15rem;
+  }
+
+  // ICB
+  .icb__cta-btn {
+    font-size: 1.4rem;
+  }
+
+  // Shared Distance
+  .cover-photo-cta {
+    font-size: 1.1rem;
+  }
+  .fa-instagram {
+    font-size: 1.25em;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  // Landing
   .navbar-brand {
     font-size: 3.5rem;
   }
@@ -485,6 +603,32 @@ textarea {
 
   .landing__learn-more-btn {
     font-size: 1rem;
+  }
+  // General sub projects
+  .project-hmw {
+    font-size: 2.25rem;
+  }
+
+  .project-subtitle {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 1.15rem;
+  }
+
+  .figure-caption {
+    font-size: 0.95rem;
+  }
+
+  // ICB
+  .icb__cta-btn {
+    font-size: 1.8rem;
+  }
+
+  // Shared Distance
+  .cover-photo-cta {
+    font-size: 1.35rem;
   }
 }
 

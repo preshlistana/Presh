@@ -18,16 +18,43 @@
 </head>
 
 <body>
-    <div class="projects__cover-img-container ">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded fixed-top">
+        <button class="fancy-nonlanding-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="nonlanding-logo">presh</span>
+        <a class="say-hi-btn cta-btn d-md-none" href="contact.html">Say Hi! 🙌</a>
+        <div class="navbar-collapse collapse w-100" id="mainNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__say-hi-btn" href="contact.html">Say Hi! 🙌</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="projects__cover-img-container mb-lg-3">
         <img class="w-100" src="assets/icb-cover.png" alt="Invention Corps Landing page">
         <a href="https://inventioncorps.org/" class="icb__cta-btn text-center">
             View Website</a>
     </div>
-    <div class="container-fluid">
+    <div class="container px-md-5">
         <div class="row">
             <div class="col-12 mt-3">
-                <h1 class="project-hmw text-center">How might we provide opportunities for undergrads to apply their
-                    skills and experiences to make a tangible impact?</h1>
+                <h1 class="project-hmw text-center py-3">How might we provide opportunities for undergrads to apply
+                    their skills and experiences to make a tangible impact?</h1>
             </div>
             <div class="col-12">
                 <h2 class="project-subtitle">Process</h2>
@@ -62,13 +89,13 @@
                         biomedical and consulting.
                     </p>
             </div>
-            <div class="col-12">
+            <div class="col-12 pb-4">
                 <h2 class="project-subtitle">Personal Contribution</h2>
             </div>
-            <div class="col-12">
-                <div class="card border-dark my-4">
+            <div class="col-md-6">
+                <div class="card border-dark h-100">
                     <div class="card-header text-center">
-                        <i class="fas fa-cogs d-block mb-2"></i>
+                        <i class="fas fa-cogs d-block mb-2 pt-2"></i>
                         <h4 class="card-title">Program Management</h4>
                     </div>
                     <div class="card-body text-dark">
@@ -84,10 +111,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="card border-dark mb-3">
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card border-dark h-100">
                     <div class="card-header text-center">
-                        <i class="fas fa-chalkboard-teacher d-block mb-2"></i>
+                        <i class="fas fa-chalkboard-teacher d-block mb-2 pt-2"></i>
                         <h4 class="card-title">Teaching</h4>
                     </div>
                     <div class="card-body text-dark">
@@ -103,15 +130,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 py-4">
                 <h2 class="project-subtitle">Other Projects</h2>
             </div>
-            <div class="col-12 mt-4">
-                <div class="card border-dark">
-                    <img src="assets/ms-logo.png" class="projects__ms-logo" alt="Make School logo">
+            <div class="col-md-6">
+                <div class="card border-dark py-1 h-100">
+                    <img src="assets/ms-logo.png" class="projects__logo pt-2" alt="Make School logo">
                     <div class="card-body">
                         <h4 class="projects__title text-center">Make School</h4>
-                        <p class="card-text">How might we design and implement a cost-effective hackathon strategy
+                        <p class="card-text text-md-center">How might we design and implement a cost-effective hackathon
+                            strategy
                             to
                             increase brand presence and yield application drafts?
                         </p>
@@ -120,12 +148,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-3">
-                <div class="card border-dark">
-                    <img src="assets/sd-favicon.png" class="projects__ms-logo" alt="Shared Distance logo">
-                    <div class="card-body">
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card border-dark h-100 d-flex py-1">
+                    <img src="assets/sd-favicon.png" class="projects__logo pt-2" alt="Shared Distance logo" />
+                    <div class="card-body d-flex flex-column justify-content-between ">
                         <h4 class="projects__title text-center">Shared Distance</h4>
-                        <p class="card-text">How might we connect people’s stories during COVID-19?
+                        <p class="card-text text-md-center">
+                            How might we connect people’s stories during COVID-19?
                         </p>
                         <a href="shared-distance.html"
                             class="cta-btn projects__view-project-btn d-block text-center">View
@@ -135,6 +164,44 @@
             </div>
         </div>
     </div>
+
+    <footer class="mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">ABOUT</h3>
+                    <p class="footer__about-text">Pellentesque viverra nibh ut lacus accumsan venenatis.
+                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about <a href="teaching.html"
+                            class="footer__teaching-link">my teaching</a>.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">PROJECTS</h3>
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="#" class="footer__link">Invention Corps</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Make School</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shared Distance</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title mb-3 text-center">LET'S TALK</h3>
+                    <a href="#" class="footer__social-img"><i class="far fa-envelope"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-12">
+                    <p class="footer__about-text text-center mt-4 mt-md-2">Precious Listana © 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

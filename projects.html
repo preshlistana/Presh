@@ -2,65 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
     <!-- Font Imports -->
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
     <title>Projects</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded fixed-top">
+        <button class="fancy-nonlanding-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="nonlanding-logo">presh</span>
+        <a class="say-hi-btn cta-btn d-md-none" href="contact.html">Say Hi! 🙌</a>
+        <div class="navbar-collapse collapse w-100" id="mainNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__say-hi-btn" href="contact.html">Say Hi! 🙌</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container px-md-5">
         <h1 class="projects-title">Projects</h1>
-        <h2 class="projects-subtitle">A deeper dive on the problem, solution
-            and impact of each project.</h2>
-        <div class="row mt-5">
+        <h2 class="projects-subtitle">
+            A deeper dive on the problem, solution and impact of each project.
+        </h2>
+        <div class="row mt-4">
             <div class="col-12">
-                <div class="card border-dark">
-                    <img src="assets/icb-logo.png" class="projects__icb-logo py-2" alt="Invention Corps logo">
+                <div class="card border-dark py-1">
+                    <img src="assets/icb-logo.png" class="projects__icb-logo py-3" alt="Invention Corps logo" />
                     <div class="card-body">
                         <h4 class="projects__title text-center">Invention Corps</h4>
-                        <p class="card-text">How might we provide opportunities for undergrads to apply their skills and
-                            experiences to make a tangible impact?
+                        <p class="card-text text-md-center">
+                            How might we provide opportunities for undergrads to apply their
+                            skills and experiences to make a tangible impact?
                         </p>
                         <a href="icb.html" class="cta-btn projects__view-project-btn d-block text-center">View
                             Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-6 mt-3">
-                <div class="card border-dark">
-                    <img src="assets/ms-logo.png" class="projects__logo" alt="Make School logo">
+            <div class="col-md-6 mt-3">
+                <div class="card border-dark h-100 py-1">
+                    <img src="assets/ms-logo.png" class="projects__logo pt-2" alt="Make School logo" />
                     <div class="card-body">
                         <h4 class="projects__title text-center">Make School</h4>
-                        <p class="card-text">How might we design and implement a cost-effective hackathon strategy to
-                            increase brand presence and yield application drafts?
+                        <p class="card-text text-md-center">
+                            How might we design and implement a cost-effective hackathon
+                            strategy to increase brand presence and yield application
+                            drafts?
                         </p>
                         <a href="ms.html" class="cta-btn projects__view-project-btn d-block text-center">View
                             Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-6 mt-3">
-                <div class="card border-dark">
-                    <img src="assets/sd-favicon.png" class="projects__logo" alt="Shared Distance logo">
-                    <div class="card-body">
+            <div class="col-md-6 mt-3">
+                <div class="card border-dark h-100 d-flex py-1">
+                    <img src="assets/sd-favicon.png" class="projects__logo pt-2" alt="Shared Distance logo" />
+                    <div class="card-body d-flex flex-column justify-content-between ">
                         <h4 class="projects__title text-center">Shared Distance</h4>
-                        <p class="card-text">How might we connect people’s stories during COVID-19?
+                        <p class="card-text text-md-center">
+                            How might we connect people’s stories during COVID-19?
                         </p>
                         <a href="shared-distance.html"
-                            class="cta-btn projects__view-project-btn d-block text-center">View Project</a>
+                            class="cta-btn projects__view-project-btn d-block text-center">View
+                            Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">ABOUT</h3>
+                    <p class="footer__about-text">Pellentesque viverra nibh ut lacus accumsan venenatis.
+                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about <a href="teaching.html"
+                            class="footer__teaching-link">my teaching</a>.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">PROJECTS</h3>
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="#" class="footer__link">Invention Corps</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Make School</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shared Distance</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title mb-3 text-center">LET'S TALK</h3>
+                    <a href="#" class="footer__social-img"><i class="far fa-envelope"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-12">
+                    <p class="footer__about-text text-center mt-4 mt-md-2">Precious Listana © 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

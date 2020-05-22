@@ -18,21 +18,48 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light navbar-expand-md bg-faded fixed-top">
+        <button class="fancy-nonlanding-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="nonlanding-logo">presh</span>
+        <a class="say-hi-btn cta-btn d-md-none" href="contact.html">Say Hi! 🙌</a>
+        <div class="navbar-collapse collapse w-100" id="mainNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bio.html">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__say-hi-btn" href="contact.html">Say Hi! 🙌</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="sd__cover-photo-container pb-3">
         <img class="w-100" src="assets/shareddistance-cover.png" alt="Shared Distance Our Stories Page">
         <div class="d-flex justify-content-center mt-3">
-            <a href="https://shareddistance.com/#home" class="cover-photo-cta mr-3"> <img src="assets/sd-favicon.png"
-                    class="sd-logo" alt="Shared Distance favicon">
+            <a href="https://shareddistance.com/#home" class="cover-photo-cta mr-3 text-center"> <img
+                    src="assets/sd-favicon.png" class="sd-logo" alt="Shared Distance favicon">
                 View Website</a>
             <a href="https://www.instagram.com/shareddistance/" class="cover-photo-cta text-center"><i
-                    class="pr-1 fab fa-instagram"></i>View
+                    class="pr-2 fab fa-instagram pt-1"></i>View
                 Instagram</a>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container px-md-5">
         <div class="row">
             <div class="col-12 mt-3">
-                <h1 class="project-hmw text-center">How might we connect people’s stories during COVID-19?</h1>
+                <h1 class="project-hmw text-center py-md-3">How might we connect people’s stories during COVID-19?</h1>
             </div>
             <div class="col-12">
                 <h2 class="project-subtitle">Process</h2>
@@ -55,29 +82,29 @@
                         target="_blank">Instagram</a> with
                     aesthetic designs. </p>
             </div>
-            <div class="col-4">
-                <img class="w-100" src="assets/shareddistance-mobile1.png" alt="Landing mobile wireframe" />
-                <figcaption class="figure-caption text-center"> Landing mobile wireframe</figcaption>
-            </div>
-            <div class="col-4">
-                <img class="w-100" src="assets/shareddistance-mobile2.png" alt="About us mobile wireframe" />
-                <figcaption class="figure-caption text-center"> About us mobile wireframe</figcaption>
-            </div>
-            <div class="col-4">
-                <img class="w-100" src="assets/shareddistance-mobile3.png" alt="Our stories mobile wireframe">
-                <figcaption class="figure-caption text-center"> Our stories mobile wireframe</figcaption>
-            </div>
-            <div class="col-12">
-                <img class="w-100 mt-3" src="assets/shareddistance-desktop.png" alt="Shared Distance landing webpage">
+            <div class="col-md-12">
+                <img class="w-100" src="assets/shareddistance-desktop.png" alt="Shared Distance landing webpage">
                 <figcaption class="figure-caption text-center mb-3"> Shared Distance landing webpage</figcaption>
             </div>
-            <div class="col-12">
+            <div class="d-none d-md-block col-md-4">
+                <img class="w-100" src="assets/shareddistance-mobile1.png" alt="Landing mobile wireframe" />
+                <figcaption class="figure-caption text-center mb-3"> Landing mobile wireframe</figcaption>
+            </div>
+            <div class="col-md-4">
+                <img class="w-100" src="assets/shareddistance-mobile2.png" alt="About us mobile wireframe" />
+                <figcaption class="figure-caption text-center mb-3"> About us mobile wireframe</figcaption>
+            </div>
+            <div class="col-md-4">
+                <img class="w-100" src="assets/shareddistance-mobile3.png" alt="Our stories mobile wireframe">
+                <figcaption class="figure-caption text-center mb-3"> Our stories mobile wireframe</figcaption>
+            </div>
+            <div class="col-12 mb-4">
                 <h2 class="project-subtitle">Personal Contribution</h2>
             </div>
-            <div class="col-12">
-                <div class="card border-dark my-4">
+            <div class="col-md-6">
+                <div class="card border-dark my-4 my-md-0">
                     <div class="card-header text-center">
-                        <i class="fas fa-crop-alt d-block mb-2"></i>
+                        <i class="fas fa-crop-alt d-block mb-2 pt-2"></i>
                         <h4 class="card-title">Wireframe</h4>
                         <h5 class="card-subtitle">Figma</h5>
                     </div>
@@ -94,10 +121,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-md-6">
                 <div class="card border-dark mb-4">
                     <div class="card-header text-center">
-                        <i class="fas fa-laptop-code d-block mb-2"></i>
+                        <i class="fas fa-laptop-code d-block mb-2 pt-2"></i>
                         <h4 class="card-title">Web Development</h4>
                         <h5 class="card-subtitle">HTML, CSS/Sass, JS, Bootstrap</h5>
                     </div>
@@ -116,28 +143,31 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 mb-4">
                 <h2 class="project-subtitle">Other Projects</h2>
             </div>
-            <div class="col-12 mt-4">
-                <div class="card border-dark">
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card border-dark py-1 h-100">
                     <img src="assets/icb-logo.png" class="projects__icb-logo py-3" alt="Invention Corps logo">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h4 class="projects__title text-center">Invention Corps</h4>
-                        <p class="card-text">How might we provide opportunities for undergrads to apply their skills and
+                        <p class="card-text text-md-center">How might we provide opportunities for undergrads to
+                            apply
+                            their skills and
                             experiences to make a tangible impact?
                         </p>
-                        <a href="icb.html" class="cta-btn projects__view-project-btn d-block text-center">View
+                        <a href="icb.html" class="cta-btn projects__view-project-btn d-block text-center pt-md-1">View
                             Project</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-3">
-                <div class="card border-dark">
-                    <img src="assets/ms-logo.png" class="projects__ms-logo" alt="Make School logo">
+            <div class="col-md-6 mt-3 mt-md-0">
+                <div class="card border-dark pt-1 h-100">
+                    <img src="assets/ms-logo.png" class="projects__logo py-2" alt="Make School logo">
                     <div class="card-body">
                         <h4 class="projects__title text-center">Make School</h4>
-                        <p class="card-text">How might we design and implement a cost-effective hackathon strategy to
+                        <p class="card-text text-md-center">How might we design and implement a cost-effective hackathon
+                            strategy to
                             increase brand presence and yield application drafts?
                         </p>
                         <a href="ms.html" class="cta-btn projects__view-project-btn d-block text-center">View
@@ -147,6 +177,44 @@
             </div>
         </div>
     </div>
+
+    <footer class="mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">ABOUT</h3>
+                    <p class="footer__about-text">Pellentesque viverra nibh ut lacus accumsan venenatis.
+                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about <a href="teaching.html"
+                            class="footer__teaching-link">my teaching</a>.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title">PROJECTS</h3>
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="#" class="footer__link">Invention Corps</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Make School</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shared Distance</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="footer__title mb-3 text-center">LET'S TALK</h3>
+                    <a href="#" class="footer__social-img"><i class="far fa-envelope"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-img"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-12">
+                    <p class="footer__about-text text-center mt-4 mt-md-2">Precious Listana © 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
