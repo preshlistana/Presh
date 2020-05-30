@@ -18,50 +18,50 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md bg-faded fixed-top">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded sticky-top scrolled">
         <button class="fancy-nonlanding-toggler navbar-toggler" type="button" data-toggle="collapse"
             data-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <span class="nonlanding-logo">presh</span>
-        <a class="say-hi-btn cta-btn d-md-none" href="contact.html">Say Hi! 🙌</a>
+        <a class="say-hi-btn cta-btn d-md-none" href="mailto:preshlistana@berkeley.edu">Say Hi! 🙌</a>
         <div class="navbar-collapse collapse w-100" id="mainNavbar">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link pr-4" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="bio.html">Bio</a>
+                    <a class="nav-link pr-4" href="bio.html">Bio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link pr-4" href="teaching.html">Teaching</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">Teaching</a>
+                    <a class="nav-link pr-4" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link header__say-hi-btn" href="contact.html">Say Hi! 🙌</a>
+                    <a class="nav-link header__say-hi-btn" href="mailto:preshlistana@berkeley.edu">Say Hi! 🙌</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container px-md-5">
+
+    <div class="container mt-3 px-md-5">
         <h1 class="projects-title">Projects</h1>
         <h2 class="projects-subtitle">
             A deeper dive on the problem, solution and impact of each project.
         </h2>
         <div class="row mt-4">
-            <div class="col-12">
+            <div class="col-12 mb-md-3">
                 <div class="card border-dark py-1">
                     <img src="assets/icb-logo.png" class="projects__icb-logo py-3" alt="Invention Corps logo" />
                     <div class="card-body">
                         <h4 class="projects__title text-center">Invention Corps</h4>
-                        <p class="card-text text-md-center">
+                        <p class="card-text text-md-center projects__hmw-question">
                             How might we provide opportunities for undergrads to apply their
                             skills and experiences to make a tangible impact?
                         </p>
-                        <a href="icb.html" class="cta-btn projects__view-project-btn d-block text-center">View
-                            Project</a>
+                        <a href="icb.html" class="cta-btn d-block text-center">View Project</a>
                     </div>
                 </div>
             </div>
@@ -70,12 +70,12 @@
                     <img src="assets/ms-logo.png" class="projects__logo pt-2" alt="Make School logo" />
                     <div class="card-body">
                         <h4 class="projects__title text-center">Make School</h4>
-                        <p class="card-text text-md-center">
+                        <p class="card-text text-md-center projects__hmw-question">
                             How might we design and implement a cost-effective hackathon
-                            strategy to increase brand presence and yield application
+                            strategy to increase brand presence and yield student application
                             drafts?
                         </p>
-                        <a href="ms.html" class="cta-btn projects__view-project-btn d-block text-center">View
+                        <a href="ms.html" class="cta-btn d-block text-center">View
                             Project</a>
                     </div>
                 </div>
@@ -85,11 +85,10 @@
                     <img src="assets/sd-favicon.png" class="projects__logo pt-2" alt="Shared Distance logo" />
                     <div class="card-body d-flex flex-column justify-content-between ">
                         <h4 class="projects__title text-center">Shared Distance</h4>
-                        <p class="card-text text-md-center">
+                        <p class="card-text text-md-center projects__hmw-question">
                             How might we connect people’s stories during COVID-19?
                         </p>
-                        <a href="shared-distance.html"
-                            class="cta-btn projects__view-project-btn d-block text-center">View
+                        <a href="shared-distance.html" class="cta-btn d-block text-center">View
                             Project</a>
                     </div>
                 </div>
@@ -97,35 +96,116 @@
         </div>
     </div>
 
-    <footer class="mt-3">
+    <!-- TESTIMONIAL CAROUSEL -->
+    <div id="testimonial__carousel" class="carousel slide mt-5" data-ride="false" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#testimonial__carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonial__carousel" data-slide-to="1"></li>
+            <li data-target="#testimonial__carousel" data-slide-to="2"></li>
+            <li data-target="#testimonial__carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner testimonial__px">
+            <h1 class="carousel__title">Working with me</h1>
+            <div class="carousel-item active">
+                <p class="testimonial__text">Precious has been a standout ever since I first met her as a part of an
+                    elite high
+                    school STEM
+                    program called SMASH. I watched her journey through UC Berkeley and into her career, and her passion
+                    for bridging the access gap in STEM for underrepresented communities has never wavered. I am
+                    fortunate that Precious chose to volunteer as a teaching assistant in my AP Computer Science
+                    Principles class. Her mini-lessons and hands-on support to our students is invaluable. She has a
+                    bright future as an educator. I cannot wait to volunteer in her classroom someday soon!</p>
+                <img class="d-block testimonial__img" src="assets/testimonial-claire.png" alt="First slide">
+                <p class="testimonial__title text-center">Claire Shorall</p>
+                <p class="testimonial__title text-center">Co-Founder, TopKnot</p>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial__text">Precious had a tremendously positive impact on our school’s culture. In
+                    addition to project managing
+                    a number of executive projects, she spearheaded community engagement initiatives that deepened our
+                    staff and student’s relationship with each other and their city.</p>
+                <img class="d-block testimonial__img" src="assets/testimonial-jeremy.png" alt="Second slide">
+                <p class="testimonial__title text-center">Jeremy Rossmann</p>
+                <p class="testimonial__title text-center">Co-Founder, Make School</p>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial__text">
+                    Precious worked with me as the Research and Programs Intern at the Kapor Center in 2018-2019. She
+                    was an excellent fit for her role and a joy to work with all the way through the internship!
+                </p>
+                <p class="testimonial__text">
+                    Precious was highly motivated to make significant contributions to every project she worked on, with
+                    a deep interest in (1) developing her project management, education research, and consultancy
+                    skills, and to (2) to learn as much as she could from every task assigned to her.
+                </p>
+                <p class="testimonial__text">
+                    At every point in her work with the Research Team at the Kapor Center, Precious displayed an
+                    exceptional level of emotional intelligence, strategic thinking, curiosity, organizational skill,
+                    and facility with data management and creation. She impressed the team with her dedication to the
+                    work and her adroit communication skills. I highly recommend Precious and believe she would be an
+                    asset to any organization or company!
+                </p>
+                <img class="d-block testimonial__img" src="assets/testimonial-frieda.png" alt="Third slide">
+                <p class="testimonial__title text-center">Frieda McAlear</p>
+                <p class="testimonial__title text-center">Senior Research Associate, Kapor Center</p>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial__text"> I am confident to say that Precious has a profound way of demonstrating
+                    the art of leadership both on an individual basis and to the masses. As a fellow co-founder for the
+                    Invention Corps of UC
+                    Berkeley, I witnessed Precious's sense for innovation and determination by creating student-led
+                    organization that used design thinking to tackle issues in poverty, society, health, and the
+                    environment. For the past 3 years, Precious's consistent ability to inspire others has since brought
+                    our initial vision into reality and has since reached communities on the global scale. Upon our
+                    simultaneous pursuit of impact within technology, innovation, and education, I know she will
+                    continue to use her passion and technical abilities to achieve nothing but excellence.</p>
+                <img class="d-block testimonial__img" src="assets/testimonial-james.png" alt="Fourth slide">
+                <p class="testimonial__title text-center">James Zamora</p>
+                <p class="testimonial__title text-center">Project Manager, VMWare</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial__carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial__carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <footer class="container px-5 mt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 text-center">
                     <h3 class="footer__title">ABOUT</h3>
-                    <p class="footer__about-text">Pellentesque viverra nibh ut lacus accumsan venenatis.
-                        Sed in suscipit metus. Sed nisi arcu, volutpat eget. Learn more about <a href="teaching.html"
-                            class="footer__teaching-link">my teaching</a>.
+                    <p class="footer__about-text"> I’m an aspiring Computer Science teacher on a mission to make CS
+                        education more equitable for low-income, underrepresented communities. Learn more about <a
+                            href="teaching.html" class="footer__teaching-link">why I'm going into teaching</a>.
                     </p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <h3 class="footer__title">PROJECTS</h3>
                     <ul class="footer__ul">
                         <li>
-                            <a href="#" class="footer__link">Invention Corps</a>
+                            <a href="icb.html" class="footer__link">Invention Corps</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Make School</a>
+                            <a href="ms.html" class="footer__link">Make School</a>
                         </li>
                         <li>
-                            <a href="#" class="footer__link">Shared Distance</a>
+                            <a href="shared-distance.html" class="footer__link">Shared Distance</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-4 text-center">
                     <h3 class="footer__title mb-3 text-center">LET'S TALK</h3>
-                    <a href="#" class="footer__social-img"><i class="far fa-envelope"></i></a>
-                    <a href="#" class="footer__social-img"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="footer__social-img"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:preshlistana@berkeley.edu" target="_blank" class="footer__social-img"><i
+                            class="far fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/precious.listana" target="_blank" class="footer__social-img"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/preshlistana/" target="_blank" class="footer__social-img"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="col-12">
                     <p class="footer__about-text text-center mt-4 mt-md-2">Precious Listana © 2020</p>

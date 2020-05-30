@@ -36,10 +36,29 @@ h1 {
   font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
 }
 
+.navbar.navbar-light.navbar-expand-md.bg-faded.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1024;
+}
+
 .cta-btn {
   color: black;
   border-radius: 0.5em;
   padding: 0.5em 1em;
+  border: none;
+  background-color: #9c8b97;
+  font-weight: bolder;
+  color: white;
+}
+
+.cta-btn:hover {
+  color: white;
+  background-color: #685964;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  text-decoration: none;
 }
 
 .projects__cover-img-container {
@@ -55,7 +74,7 @@ h1 {
   border: 2px solid #001229;
   padding: 0.5em;
   border-radius: 0.5em;
-  width: 30%;
+  width: 40%;
 }
 
 .cover-photo-cta:hover {
@@ -116,24 +135,11 @@ h1 {
   font-size: 1.1rem;
 }
 
-.view-project-btn,
-.projects__view-project-btn {
+.view-project-btn {
   border: none;
   background-color: #9c8b97;
   font-weight: bolder;
   color: white;
-}
-
-.projects__view-project-btn {
-  font-size: 0.75rem;
-}
-
-.projects__view-project-btn:hover {
-  color: black;
-  text-decoration: none;
-  background-color: #bfb4bc;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 .projects-title {
@@ -167,6 +173,26 @@ h1 {
   font-size: 2rem;
 }
 
+.landing__logo {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 2.5rem;
+  color: #e49e8e;
+}
+
+.scrolled {
+  background-color: #fff !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.fancy-nonlanding-toggler.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.fancy-nonlanding-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0);
+}
+
 .navbar-brand,
 .nonlanding-logo {
   font-family: "Covered By Your Grace", cursive;
@@ -181,41 +207,8 @@ h1 {
   border-color: rgba(255, 255, 255, 0);
 }
 
-.fancy-nonlanding-toggler.navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='3.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.fancy-nonlanding-toggler.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0);
-}
-
 .nonlanding-logo {
   color: #e49e8e;
-}
-
-.say-hi-btn {
-  background-color: #9c8b97;
-  color: white;
-  font-weight: bolder;
-  padding: 0.25em 0.5em;
-}
-
-.say-hi-btn:hover {
-  color: white;
-  background-color: #685964;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  text-decoration: none;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  background: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -243,22 +236,48 @@ h1 {
   background-color: #9c8b97;
 }
 
-.bio__img {
-  width: 100%;
+.article__title,
+.article__first-letter {
+  font-size: 1.9rem;
 }
 
-.bio__title,
-.bio__first-letter {
-  font-size: 1.8rem;
+.article__subtitle {
+  font-size: 1.1rem;
+  color: gray;
 }
 
-.bio__subtitle {
-  color: rgba(0, 0, 0, 0.7);
+.article__section {
+  font-size: 1.4rem;
+  font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
+}
+
+.article__section_two {
+  font-size: 1.25rem;
+  color: gray;
+  font-style: italic;
+}
+
+.article__content {
+  font-size: 1.05rem;
+}
+
+.projects__hmw-question {
+  font-size: 1.1rem;
+}
+
+.carousel__title {
+  font-size: 2.25rem;
+  color: white;
+  font-family: "Covered By Your Grace", cursive;
 }
 
 .carousel-inner {
   background-color: #9c8b97;
   padding: 3em 0;
+}
+
+.testimonial__px {
+  padding: 10% 15%;
 }
 
 .testimonial__text {
@@ -279,6 +298,22 @@ h1 {
   height: 150px;
   border-radius: 50%;
   margin: 0 auto 1em;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 .sd__cover-photo-container {
@@ -319,7 +354,7 @@ h1 {
 
 .icb__cta-btn:hover {
   text-decoration: none;
-  background-color: #dcebff;
+  background-color: #f5f9ff;
   border: 1px solid #001229;
   color: black;
   -webkit-transition: 0.3s ease-in;
@@ -336,6 +371,11 @@ h1 {
 
 .fa-project-diagram {
   color: #abcc03;
+}
+
+.teaching__scratch {
+  width: 20px;
+  height: 20px;
 }
 
 .contact__title {
@@ -417,8 +457,8 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .nav-link {
-    font-size: 1.05rem;
+  .figure-caption {
+    font-size: 0.9rem;
   }
   .navbar-nav .nav-link.header__say-hi-btn {
     background-color: #9c8b97;
@@ -432,6 +472,15 @@ textarea {
     -webkit-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
   }
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+  }
+  .landing__logo {
+    color: white;
+  }
   .landing__navbar-ul {
     width: 50%;
   }
@@ -439,17 +488,15 @@ textarea {
     color: black;
     font-weight: normal;
   }
-  .navbar-dark .navbar-nav .nav-link.say-hi-btn {
-    background-color: #9c8b97;
-    border-radius: 0.5em;
+  .navbar-nav .nav-link.landing__nav-link {
     color: white;
+    font-size: 1.05rem;
   }
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #9c8b97;
-    font-weight: bolder;
+  .carousel__title {
+    font-size: 2.7rem;
   }
-  .projects__view-project-btn {
-    font-size: 0.9rem;
+  .testimonial__px {
+    padding: 5% 15%;
   }
   .project-hmw {
     font-size: 1.75rem;
@@ -464,14 +511,29 @@ textarea {
     font-size: 1.4rem;
   }
   .cover-photo-cta {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .fa-instagram {
     font-size: 1.25em;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+  .figure-caption {
+    font-size: 0.95rem;
+  }
+  .navbar-nav .nav-link.header__say-hi-btn {
+    color: white;
+  }
+  .landing__logo {
+    font-size: 3.75rem;
+  }
+  .nav-link {
+    font-size: 1.05rem;
+  }
+  .navbar-nav .nav-link.landing__nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
   .navbar-brand {
     font-size: 3.5rem;
   }
@@ -479,11 +541,14 @@ textarea {
     font-size: 1.15rem;
   }
   .landing__bio {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 1em;
   }
-  .landing__learn-more-btn {
-    font-size: 1rem;
+  .landing__cta {
+    font-size: 1.05rem;
+  }
+  .testimonial__px {
+    padding: 3% 15%;
   }
   .project-hmw {
     font-size: 2.25rem;
@@ -494,14 +559,23 @@ textarea {
   .project-description {
     font-size: 1.15rem;
   }
-  .figure-caption {
-    font-size: 0.95rem;
-  }
   .icb__cta-btn {
     font-size: 1.8rem;
   }
   .cover-photo-cta {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing__logo {
+    font-size: 4rem;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  .landing__bio {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
